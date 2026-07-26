@@ -1,1108 +1,835 @@
-/* General Styling */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-
-body{
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-color:white;
-    color:#333;
-
 }
 
 
-/* Header */
-
-header{
-
-    background:white;
-    padding:20px 8%;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
-
+/* Body */
+body {
+    color: #333;
+    background: #fff;
 }
 
 
-nav{
+/* Navigation Bar */
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
 
-/* Logo */
-
-.logo img{
-
-    width:120px;
-    height:auto;
-
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #C9A227;
 }
 
 
-/* Navigation */
-
-nav ul{
-
-    display:flex;
-    gap:30px;
-    list-style:none;
-
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
 }
 
 
-nav ul li a{
-
-    text-decoration:none;
-    color:#333;
-    font-weight:bold;
-    font-size:16px;
-
+.nav-links li a {
+    text-decoration: none;
+    color: #0B1F3A;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
 
-nav ul li a:hover{
-
-    color:#D4AF37;
-
+.nav-links li a:hover {
+    color: #C9A227;
 }
-
 
 /* Hero Section */
-
-.hero{
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:60px 8%;
-    background:#F7D6D0;
-
+.hero {
+    height: 500px;
+    background-image: url("../images/hero-image!.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 
-.hero-content{
+.hero {
+    height: 550px;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ), url("../images/hero.jpg");
 
-    width:50%;
-
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
-.hero-content h1{
-
-    font-size:50px;
-    color:#D4AF37;
-    margin-bottom:20px;
-
+.hero-content h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
 }
 
 
-.hero-content p{
-
-    font-size:18px;
-    line-height:1.6;
-    margin-bottom:30px;
-
+.hero-content p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
-
-
-
-.hero-image{
-
-    width:45%;
-
-}
-
-
-.hero-image img{
-
-    width:100%;
-    border-radius:20px;
-
-}
-
 
 
 /* Buttons */
 
-.hero-buttons a{
-
-    display:inline-block;
-    padding:14px 30px;
-    background:#D4AF37;
-    color:white;
-    text-decoration:none;
-    border-radius:30px;
-    margin-right:15px;
-    font-weight:bold;
-
+.btn {
+    display: inline-block;
+    background: #C9A227;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 
-.hero-buttons a:hover{
+.btn:hover {
+    background: #0B1F3A;
+}
 
-    background:#333;
-
+/* About Preview */
+.about-preview {
+    padding: 60px 8%;
+    text-align: center;
 }
 
 
-.second-btn{
-
-    background:white !important;
-    color:#D4AF37 !important;
-    border:2px solid #D4AF37;
-
+.about-preview h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
 }
-
-/* Featured Products Section */
-
-.featured-products{
-
-    padding:60px 8%;
-    text-align:center;
-    background:white;
-
-}
-
-
-.featured-products h2{
-
-    font-size:35px;
-    color:#D4AF37;
-    margin-bottom:15px;
-
-}
-
-
-.section-text{
-
-    font-size:17px;
-    margin-bottom:40px;
-    color:#555;
-
-}
-
-
-
-/* Product Container */
-
-.product-container{
-
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-
-}
-
-
-
-/* Product Cards */
-
-.product-card{
-
-    width:300px;
-    background:#F7D6D0;
-    padding:20px;
-    border-radius:20px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-
-}
-
-
-
-.product-card img{
-
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    border-radius:15px;
-
-}
-
-
-
-.product-card h3{
-
-    margin:20px 0 10px;
-    color:#D4AF37;
-    font-size:22px;
-
-}
-
-
-
-.product-card p{
-
-    color:#555;
-    line-height:1.5;
-    margin-bottom:20px;
-
-}
-
-
-
-.product-card a{
-
-    text-decoration:none;
-    background:#D4AF37;
-    color:white;
-    padding:10px 25px;
-    border-radius:25px;
-    display:inline-block;
-
-}
-
-
-
-.product-card a:hover{
-
-    background:#333;
-
-}
-
-/* About Preview Section */
-
-.about-preview{
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:40px;
-    padding:70px 8%;
-    background:#F7D6D0;
-
-}
-
-
-.about-image{
-
-    width:45%;
-
-}
-
-
-.about-image img{
-
-    width:100%;
-    border-radius:20px;
-
-}
-
-
-
-.about-content{
-
-    width:50%;
-
-}
-
-
-
-.about-content h2{
-
-    font-size:35px;
-    color:#D4AF37;
-    margin-bottom:20px;
-
-}
-
-
-
-.about-content p{
-
-    font-size:17px;
-    line-height:1.7;
-    margin-bottom:30px;
-
-}
-
-
-
-.about-content a{
-
-    text-decoration:none;
-    background:#D4AF37;
-    color:white;
-    padding:12px 30px;
-    border-radius:30px;
-    font-weight:bold;
-
-}
-
-
-
-.about-content a:hover{
-
-    background:#333;
-
-}
-
-
-
-
 
 /* Footer */
 
-footer{
+footer {
+    background: #0B1F3A;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
 
-    background:#D4AF37;
-    color:white;
-    text-align:center;
-    padding:25px;
+
+/* Destination Cards */
+
+.destination-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.destination-card {
+    width: 320px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+
+.destination-card:hover {
+    transform: translateY(-10px);
+}
+
+
+.destination-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+.destination-card h3 {
+    color: #0B1F3A;
+    font-size: 22px;
+    margin: 20px;
+}
+
+
+.destination-card p {
+    padding: 0 20px 25px;
+    line-height: 1.6;
+}
+
+/* Why Choose Us */
+
+.why-us {
+    padding: 60px 8%;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+
+.why-us h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+
+.why-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.why-card {
+    width: 300px;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.why-card i {
+    font-size: 40px;
+    color: #f4c95d;
+    margin-bottom: 20px;
+}
+
+
+.why-card h3 {
+    margin-bottom: 15px;
+}
+
+/* Testimonials Section */
+
+.testimonials {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+
+.testimonials h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.testimonial-card {
+    width: 300px;
+    padding: 30px;
+    background: #0B1F3A;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.testimonial-card p {
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.testimonial-card h3 {
+    color: #f4c95d;
+}
+
+/* Call To Action Section */
+
+.cta {
+    padding: 70px 8%;
+    background: #0B1F3A;
+    color: white;
+    text-align: center;
+}
+
+
+.cta h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+.cta .btn {
+    background: #f4c95d;
+    color: #0B1F3A;
+}
+
+
+.cta .btn:hover {
+    background: white;
+}
+
+/* Page Banner */
+
+.page-banner {
+    height: 300px;
+    background: #0B1F3A;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.page-banner h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+
+.page-banner p {
+    font-size: 20px;
+}
+
+/* About Section */
+
+.about-section {
+
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
 
 }
 
 
+.about-image img {
 
-footer p{
-
-    margin-bottom:15px;
-
-}
-
-
-
-.social-icons a{
-
-    color:white;
-    font-size:22px;
-    margin:0 12px;
+    width: 450px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
 
 }
 
 
+.about-text {
 
-.social-icons a:hover{
-
-    color:#F7D6D0;
-
-}
-
-/* About Hero Section */
-
-.about-hero{
-
-    background:#F7D6D0;
-    text-align:center;
-    padding:70px 8%;
+    flex: 1;
 
 }
 
 
-.about-hero h1{
+.about-text h2 {
 
-    font-size:45px;
-    color:#D4AF37;
-    margin-bottom:15px;
-
-}
-
-
-.about-hero p{
-
-    font-size:18px;
-    color:#333;
+    font-size: 35px;
+    margin-bottom: 20px;
 
 }
 
 
+.about-text p {
 
+    line-height: 1.7;
+    margin-bottom: 20px;
 
-/* Our Story Section */
+}
 
-.our-story{
+/* Login Section */
 
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:40px;
-    padding:70px 8%;
+.login-section {
+
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 8%;
+    background: #f8f8f8;
 
 }
 
 
-.story-image{
+.login-box {
 
-    width:45%;
-
-}
-
-
-.story-image img{
-
-    width:100%;
-    border-radius:20px;
+    width: 400px;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 
 }
 
 
+.login-box h2 {
 
-.story-text{
-
-    width:50%;
-
-}
-
-
-.story-text h2{
-
-    font-size:35px;
-    color:#D4AF37;
-    margin-bottom:20px;
+    text-align: center;
+    margin-bottom: 15px;
 
 }
 
 
-.story-text p{
+.login-box p {
 
-    font-size:17px;
-    line-height:1.7;
-
-}
-
-
-
-
-
-/* Mission and Vision */
-
-.mission{
-
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    padding:50px 8%;
-    background:#F7D6D0;
+    text-align: center;
+    margin-bottom: 20px;
 
 }
 
 
+.login-box label {
 
-.mission-card{
-
-    background:white;
-    width:300px;
-    text-align:center;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
 
 }
 
 
+.login-box input {
 
-.mission-card i{
-
-    font-size:40px;
-    color:#D4AF37;
-    margin-bottom:20px;
-
-}
-
-
-
-.mission-card h3{
-
-    color:#D4AF37;
-    font-size:25px;
-    margin-bottom:15px;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 
 }
 
 
+.login-box button {
 
-.mission-card p{
-
-    line-height:1.6;
-
-}
-
-/* Shop Hero Section */
-
-.shop-hero{
-
-    background:#F7D6D0;
-    text-align:center;
-    padding:70px 8%;
+    width: 100%;
+    padding: 12px;
+    background: #0B1F3A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 
 }
 
 
-.shop-hero h1{
+.login-box button:hover {
 
-    font-size:45px;
-    color:#D4AF37;
-    margin-bottom:15px;
-
-}
-
-
-.shop-hero p{
-
-    font-size:18px;
+    background: #f4c95d;
+    color: #0B1F3A;
 
 }
-
-
-
-
-
-/* Shop Section */
-
-.shop-section{
-
-    padding:60px 8%;
-    text-align:center;
-
-}
-
-
-.shop-section h2{
-
-    font-size:35px;
-    color:#D4AF37;
-    margin-bottom:40px;
-
-}
-
-
-
-
-
-/* Product Container */
-
-.shop-container{
-
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap: wrap;
-
-}
-
-
-
-
-
-/* Product Cards */
-
-.shop-card{
-
-    width: 280px;px;
-    background:#F7D6D0;
-    padding:20px;
-    border-radius:20px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-    
-
-}
-
-
-
-.shop-card img{
-
-    width:100%;
-    height:260px;
-    object-fit:cover;
-    border-radius:15px;
-
-}
-
-
-
-.shop-card h3{
-
-    color:#D4AF37;
-    font-size:22px;
-    margin:15px 0;
-
-}
-
-
-
-.shop-card p{
-
-    margin-bottom:15px;
-    line-height:1.5;
-
-}
-
-
-
-.shop-card h4{
-
-    color:#333;
-    font-size:20px;
-
-}
-
-
-
-.shop-card:hover{
-
-    transform:translateY(-10px);
-    transition:0.3s;
-
-}
-
-/* Blog Hero Section */
-
-.blog-hero{
-
-    background:#F7D6D0;
-    text-align:center;
-    padding:70px 8%;
-
-}
-
-
-.blog-hero h1{
-
-    font-size:45px;
-    color:#D4AF37;
-    margin-bottom:15px;
-
-}
-
-
-.blog-hero p{
-
-    font-size:18px;
-
-}
-
-
-
-
-
-/* Blog Section */
-
-.blog-section{
-
-    padding:60px 8%;
-
-}
-
-
-
-.blog-container{
-
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-
-}
-
-
-
-
-
-/* Blog Cards */
-
-.blog-card{
-
-    width:300px;
-    background:#F7D6D0;
-    padding:20px;
-    border-radius:20px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-
-}
-
-
-
-.blog-card img{
-
-    width:100%;
-    height:220px;
-    object-fit:cover;
-    border-radius:15px;
-
-}
-
-
-
-.blog-card h3{
-
-    color:#D4AF37;
-    font-size:22px;
-    margin:20px 0 10px;
-
-}
-
-
-
-.blog-card p{
-
-    line-height:1.6;
-    margin-bottom:20px;
-
-}
-
-
-
-.blog-card a{
-
-    text-decoration:none;
-    background:#D4AF37;
-    color:white;
-    padding:10px 25px;
-    border-radius:25px;
-
-}
-
-
-
-.blog-card a:hover{
-
-    background:#333;
-
-}
-
-/* Contact Hero Section */
-
-.contact-hero{
-
-    background:#F7D6D0;
-    text-align:center;
-    padding:70px 8%;
-
-}
-
-
-.contact-hero h1{
-
-    font-size:45px;
-    color:#D4AF37;
-    margin-bottom:15px;
-
-}
-
-
-.contact-hero p{
-
-    font-size:18px;
-
-}
-
-
-
-
 
 /* Contact Section */
 
-.contact-section{
+.contact-section {
 
-    display:flex;
-    justify-content:space-between;
-    gap:50px;
-    padding:70px 8%;
+    padding: 70px 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+}
+
+
+.contact-info {
+
+    flex: 1;
+
+}
+
+
+.contact-info h2 {
+
+    font-size: 35px;
+    margin-bottom: 20px;
+
+}
+
+
+.contact-info p {
+
+    margin-bottom: 20px;
+    line-height: 1.6;
 
 }
 
 
 
+.contact-form {
 
-
-/* Contact Information */
-
-.contact-info{
-
-    width:40%;
-
-}
-
-
-.contact-info h2{
-
-    color:#D4AF37;
-    font-size:32px;
-    margin-bottom:25px;
-
-}
-
-
-
-.contact-info p{
-
-    font-size:18px;
-    margin:20px 0;
-
-}
-
-
-
-.contact-info i{
-
-    color:#D4AF37;
-    margin-right:15px;
-
-}
-
-
-
-
-
-/* Contact Form */
-
-.contact-form{
-
-    width:50%;
-    background:#F7D6D0;
-    padding:30px;
-    border-radius:20px;
-
-}
-
-
-
-.contact-form h2{
-
-    color:#D4AF37;
-    margin-bottom:20px;
+    flex: 1;
 
 }
 
 
 
 .contact-form input,
-.contact-form textarea{
+.contact-form textarea {
 
-    width:100%;
-    padding:15px;
-    margin-bottom:15px;
-    border:none;
-    border-radius:10px;
-    outline:none;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+
+.contact-form textarea {
+
+    height: 150px;
+    resize: none;
 
 }
 
 
 
-.contact-form textarea{
+.contact-form button {
 
-    height:120px;
-    resize:none;
+    width: 100%;
+    padding: 15px;
+    background: #0B1F3A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+
+.contact-form button:hover {
+
+    background: #f4c95d;
+    color: #0B1F3A;
+
+}
+
+/* Sign Up / Login Section */
+
+.login-section {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 8%;
+    background: #f8f8f8;
+}
+
+
+.login-box {
+    width: 400px;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #0B1F3A;
+}
+
+
+.login-box p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.login-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: #0B1F3A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.login-box button:hover {
+    background: #f4c95d;
+    color: #0B1F3A;
+}
+
+
+.login-box a {
+    color: #0B1F3A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.login-box a:hover {
+    color: #f4c95d;
+}
+
+.login-box p a {
+    color: #0B1F3A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.login-box p a:hover {
+    color: #f4c95d;
+}
+
+/* Packages Section */
+
+.packages {
+
+    padding: 70px 8%;
+    text-align: center;
+
+}
+
+
+.packages h2 {
+
+    font-size: 35px;
+    margin-bottom: 40px;
+
+}
+
+/* Package Cards */
+
+.package-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.package-card {
+    width: 320px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+
+.package-card:hover {
+    transform: translateY(-10px);
+}
+
+
+.package-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+.package-card h3 {
+    color: #0B1F3A;
+    margin: 20px 0 10px;
+}
+
+
+.package-card h4 {
+    color: #C9A227;
+    font-size: 24px;
+    margin: 15px;
+}
+
+
+.social-icons a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+
+.social-icons i {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+
+.social-icons a:hover {
+    color: #C9A227;
+}
+
+/* Destination Page */
+
+.destination-hero {
+
+    height: 400px;
+    background: linear-gradient(
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)
+    ),
+    url("../images/destination.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
+}
+
+
+.destination-hero h1 {
+
+    font-size: 50px;
+    margin-bottom: 15px;
 
 }
 
 
 
-.contact-form button{
+.destination-page {
 
-    background:#D4AF37;
-    color:white;
-    border:none;
-    padding:12px 30px;
-    border-radius:30px;
-    cursor:pointer;
-    font-weight:bold;
+    padding: 70px 8%;
+    text-align: center;
+
+}
+
+
+.destination-page h2 {
+
+    font-size: 40px;
+    color: #0B1F3A;
+    margin-bottom: 40px;
 
 }
 
 
 
-.contact-form button:hover{
+.destination-grid {
 
-    background:#333;
-
-}
-
-/* Login Section */
-
-.login-section{
-
-    min-height:70vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:60px 8%;
-    background:#F7D6D0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 
 }
 
 
 
-.login-box{
+.destination-box {
 
-    width:400px;
-    background:white;
-    padding:40px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-
-}
-
-
-
-.login-box h1{
-
-    color:#D4AF37;
-    font-size:35px;
-    margin-bottom:15px;
+    width: 320px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 
 }
 
 
 
-.login-box p{
+.destination-box img {
 
-    margin-bottom:25px;
-    line-height:1.5;
-
-}
-
-
-
-
-
-.login-box input{
-
-    width:100%;
-    padding:15px;
-    margin-bottom:15px;
-    border:1px solid #ddd;
-    border-radius:10px;
-    outline:none;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
 
 }
 
 
 
+.destination-content {
 
-.login-box button{
+    padding: 25px;
 
-    width:100%;
-    padding:14px;
-    background:#D4AF37;
-    color:white;
-    border:none;
-    border-radius:30px;
-    font-size:16px;
-    font-weight:bold;
-    cursor:pointer;
+}
+
+
+.destination-content h3 {
+
+    color: #0B1F3A;
+    margin-bottom: 15px;
 
 }
 
 
 
-.login-box button:hover{
+.travel-benefits {
 
-    background:#333;
-
-}
-
-
-
-
-.signup-link a{
-
-    color:#D4AF37;
-    text-decoration:none;
-    font-weight:bold;
-
-}
-
-/* Signup Section */
-
-.signup-section{
-
-    min-height:70vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:60px 8%;
-    background:#F7D6D0;
+    background: #f8f8f8;
+    padding: 70px 8%;
+    text-align: center;
 
 }
 
 
 
-.signup-box{
+.benefit-container {
 
-    width:420px;
-    background:white;
-    padding:40px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 
 }
 
 
 
-.signup-box h1{
+.benefit-card {
 
-    color:#D4AF37;
-    font-size:35px;
-    margin-bottom:15px;
-
-}
-
-
-
-.signup-box p{
-
-    margin-bottom:25px;
-    line-height:1.5;
+    background: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
 
 }
 
 
 
+.benefit-card i {
 
-.signup-box input{
-
-    width:100%;
-    padding:15px;
-    margin-bottom:15px;
-    border:1px solid #ddd;
-    border-radius:10px;
-    outline:none;
-
-}
-
-
-
-
-.signup-box button{
-
-    width:100%;
-    padding:14px;
-    background:#D4AF37;
-    color:white;
-    border:none;
-    border-radius:30px;
-    font-size:16px;
-    font-weight:bold;
-    cursor:pointer;
-
-}
-
-
-
-.signup-box button:hover{
-
-    background:#333;
-
-}
-
-
-
-
-.login-link a{
-
-    color:#D4AF37;
-    text-decoration:none;
-    font-weight:bold;
+    font-size: 40px;
+    color: #C9A227;
+    margin-bottom: 20px;
 
 }
