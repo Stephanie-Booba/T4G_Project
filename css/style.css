@@ -1,0 +1,1757 @@
+/*  GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    color: #333;
+
+}
+
+
+a {
+
+    text-decoration: none;
+
+}
+
+
+img {
+
+    max-width: 100%;
+
+    display: block;
+
+}
+
+
+
+/*NAVBAR*/
+
+
+header {
+
+    position: absolute;
+
+    top: 0;
+
+    width: 100%;
+
+    z-index: 10;
+
+}
+
+
+
+nav {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px 8%;
+
+}
+
+
+
+.logo {
+
+    color: white;
+
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 55px;
+
+}
+
+
+
+.logo span {
+
+    display: block;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    letter-spacing: 4px;
+
+    text-align: center;
+
+}
+
+
+
+nav ul {
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 35px;
+
+}
+
+
+
+nav ul li a {
+
+    color: white;
+
+    font-size: 16px;
+
+}
+
+
+
+nav ul li a:hover {
+
+    color: #d4af37;
+
+}
+
+
+
+.nav-buttons a {
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border-radius: 25px;
+
+    margin-left: 10px;
+
+}
+
+
+
+.nav-buttons a:last-child {
+
+    background: #d4af37;
+
+}
+
+
+
+
+
+/* HERO SECTION */
+
+
+.hero {
+
+
+    height: 100vh;
+
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+
+    url("../images/hero\ banner\ index.jpg");
+
+
+    background-size: cover;
+
+    background-position: center;
+
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+    text-align: center;
+
+    color: white;
+
+}
+
+
+
+.hero h2 {
+
+    font-size: 55px;
+
+    max-width: 900px;
+
+}
+
+
+
+.hero p {
+
+    font-size: 18px;
+
+    margin: 25px 0;
+
+}
+
+
+
+.hero a {
+
+    display: inline-block;
+
+    background: #d4af37;
+
+    color: white;
+
+    padding: 15px 35px;
+
+    border-radius: 30px;
+
+    margin: 10px;
+
+}
+
+
+
+
+
+
+
+/* GENERAL SECTIONS */
+
+
+section {
+
+    padding: 80px 8%;
+
+}
+
+
+
+section > h2 {
+
+    text-align: center;
+
+    color: #0b1f3a;
+
+    font-size: 35px;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+section > p {
+
+    text-align: center;
+
+}
+
+
+
+
+
+
+/* DESTINATIONS*/
+
+
+.destination-container {
+
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+}
+
+
+
+.destination-card {
+
+
+    width: 280px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+
+}
+
+
+
+.destination-card img {
+
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+
+
+.destination-card h3 {
+
+    padding: 15px;
+
+    color: #0b1f3a;
+
+}
+
+
+
+.destination-card p {
+
+    padding: 0 15px 20px;
+
+}
+
+
+
+
+
+
+/* TESTIMONIALS */
+
+
+.testimonials {
+
+
+    background: #f8f5ef;
+
+}
+
+
+
+.testimonial-container {
+
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+}
+
+
+
+.testimonial-card {
+
+
+    width: 320px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+
+    text-align: center;
+
+}
+
+
+
+.testimonial-card p {
+
+    font-style: italic;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.testimonial-card h4 {
+
+    color: #d4af37;
+
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+footer {
+
+
+    background: #0b1f3a;
+
+    color: white;
+
+    padding: 50px 8%;
+
+
+}
+
+
+
+.footer-container {
+
+
+    display: flex;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    gap: 40px;
+
+}
+
+
+
+.footer-container div {
+
+    width: 250px;
+
+}
+
+
+
+footer h3 {
+
+    color: #d4af37;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.footer-links a,
+.footer-social a {
+
+
+    display: block;
+
+    color: white;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.footer-links a:hover,
+.footer-social a:hover {
+
+
+    color: #d4af37;
+
+}
+
+
+
+.copyright {
+
+
+    text-align: center;
+
+    margin-top: 30px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255,255,255,0.3);
+
+}
+
+
+
+
+
+
+
+/* MOBILE DESIGN */
+
+
+@media(max-width:768px){
+
+
+nav {
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+
+nav ul {
+
+    flex-direction: column;
+
+    text-align: center;
+
+}
+
+
+
+.hero h2 {
+
+    font-size: 35px;
+
+}
+
+
+
+.destination-container {
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+
+
+.footer-container {
+
+    flex-direction: column;
+
+}
+
+
+
+}
+
+
+/*ABOUT PAGE*/
+
+
+.about-hero {
+
+    height: 450px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("../images/about team.jpg");
+
+
+    background-size: cover;
+
+    background-position: center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+
+.about-hero h1 {
+
+    font-size:50px;
+
+}
+
+
+
+.about-hero p {
+
+    font-size:18px;
+
+    margin-top:15px;
+
+}
+
+
+
+
+
+.about-content {
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:50px;
+
+}
+
+
+
+.about-text {
+
+    flex:1;
+
+}
+
+
+
+.about-text h2 {
+
+    color:#0b1f3a;
+
+    font-size:35px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.about-text p {
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.about-image {
+
+    flex:1;
+
+}
+
+
+
+.about-image img {
+
+    width:100%;
+
+    border-radius:20px;
+
+}
+
+
+
+
+
+
+.mission-section {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    background:#f8f5ef;
+
+}
+
+
+
+.mission-card {
+
+    background:white;
+
+    width:350px;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+
+
+.mission-card h2 {
+
+    color:#d4af37;
+
+    margin-bottom:15px;
+
+}
+
+/* DESTINATIONS PAGE*/
+
+
+.destination-hero {
+
+    height:450px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("../images/destination.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+
+.destination-hero h1 {
+
+    font-size:50px;
+
+}
+
+
+
+.destination-hero p {
+
+    font-size:18px;
+
+}
+
+
+
+
+
+.destinations-page {
+
+    text-align:center;
+
+}
+
+
+
+.destinations-page h2 {
+
+    color:#0b1f3a;
+
+    font-size:35px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.destination-grid {
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+}
+
+
+
+.destination-card {
+
+    width:280px;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+
+    transition:0.3s;
+
+}
+
+
+
+.destination-card:hover {
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.destination-card img {
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+
+
+.destination-card h3 {
+
+    color:#0b1f3a;
+
+    margin:15px;
+
+}
+
+
+
+.destination-card p {
+
+    padding:0 15px 25px;
+
+}
+
+/*  CONTACT PAGE */
+
+
+.contact-hero {
+
+    height:450px;
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+
+    url("../images/contact.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+
+.contact-hero h1 {
+
+    font-size:50px;
+
+}
+
+
+
+.contact-hero p {
+
+    font-size:18px;
+
+    margin-top:15px;
+
+}
+
+
+
+
+
+.contact-section {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:60px;
+
+    padding:80px 8%;
+
+}
+
+
+
+.contact-info,
+.contact-form {
+
+    width:400px;
+
+}
+
+
+
+.contact-info h2,
+.contact-form h2 {
+
+    color:#0b1f3a;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.contact-info p {
+
+    margin:15px 0;
+
+}
+
+
+
+
+
+.contact-form input,
+.contact-form textarea {
+
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+}
+
+
+
+.contact-form textarea {
+
+    height:150px;
+
+    resize:none;
+
+}
+
+
+
+.contact-form button {
+
+    background:#d4af37;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+}
+
+
+
+.contact-form button:hover {
+
+    background:#b8962e;
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.contact-section {
+
+    flex-direction:column;
+
+}
+
+
+
+.contact-info,
+.contact-form {
+
+    width:100%;
+
+}
+
+
+}
+
+/*LOGIN PAGE*/
+
+
+.login-hero {
+
+    height:400px;
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+
+    url("../images/login.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+
+.login-hero h1 {
+
+    font-size:50px;
+
+}
+
+
+
+.login-hero p {
+
+    font-size:18px;
+
+}
+
+
+
+
+
+
+.login-section {
+
+    min-height:500px;
+
+    background:#f8f5ef;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.login-form {
+
+    background:white;
+
+    width:400px;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+    text-align:center;
+
+}
+
+
+
+.login-form h2 {
+
+    color:#0b1f3a;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.login-form input {
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+}
+
+
+
+.login-form button {
+
+    width:100%;
+
+    background:#d4af37;
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.login-form a {
+
+    color:#d4af37;
+
+}
+
+/* SIGNUP PAGE*/
+
+
+.signup-hero {
+
+    height:400px;
+
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+
+
+    url("../images/signup.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+
+.signup-hero h1 {
+
+    font-size:50px;
+
+}
+
+
+
+.signup-hero p {
+
+    font-size:18px;
+
+}
+
+
+
+
+
+
+.signup-section {
+
+    min-height:550px;
+
+    background:#f8f5ef;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.signup-form {
+
+    background:white;
+
+    width:400px;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+    text-align:center;
+
+}
+
+
+
+.signup-form h2 {
+
+    color:#0b1f3a;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.signup-form input {
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+}
+
+
+
+.signup-form button {
+
+    width:100%;
+
+    background:#d4af37;
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.signup-form a {
+
+    color:#d4af37;
+
+}
+
+/* PACKAGES PAGE*/
+
+
+/* HERO */
+
+.packages-hero {
+
+    height: 500px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("../images/hero\ packages\ page\ .jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+
+.packages-hero h1 {
+
+    font-size:55px;
+
+    font-family:'Poppins', sans-serif;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.packages-hero p {
+
+    font-size:20px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.packages-hero a {
+
+    background:#d4af37;
+
+    color:white;
+
+    padding:15px 40px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    transition:0.3s;
+
+}
+
+
+
+.packages-hero a:hover {
+
+    background:white;
+
+    color:#0b1f3a;
+
+}
+
+
+
+
+
+/*TRAVEL SERVICES*/
+
+
+.services {
+
+    padding:80px 8%;
+
+    text-align:center;
+
+}
+
+
+
+.services h2,
+.popular-packages h2,
+.why-us h2 {
+
+    font-size:38px;
+
+    color:#0b1f3a;
+
+    margin-bottom:45px;
+
+}
+
+
+
+.service-container {
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+}
+
+
+
+
+
+.service-card {
+
+    width:300px;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+
+    transition:0.3s;
+
+}
+
+
+
+.service-card:hover {
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.service-card img {
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+
+
+.service-card h3 {
+
+    color:#0b1f3a;
+
+    font-size:23px;
+
+    margin:20px 0 10px;
+
+}
+
+
+
+.service-card p {
+
+    padding:0 20px 25px;
+
+    color:#666;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+
+
+
+/*POPULAR PACKAGES*/
+
+
+.popular-packages {
+
+    background:#f8f5ef;
+
+    padding:80px 8%;
+
+    text-align:center;
+
+}
+
+
+
+.package-container {
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:35px;
+
+}
+
+
+
+
+
+.package-card {
+
+    width:320px;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+    transition:0.3s;
+
+}
+
+
+
+.package-card:hover {
+
+    transform:translateY(-12px);
+
+}
+
+
+
+.package-card img {
+
+    width:100%;
+
+    height:230px;
+
+    object-fit:cover;
+
+}
+
+
+
+.package-card h3 {
+
+    color:#0b1f3a;
+
+    font-size:24px;
+
+    margin:20px 0 10px;
+
+}
+
+
+
+.package-card p {
+
+    color:#666;
+
+    padding:0 20px;
+
+    line-height:1.6;
+
+}
+
+
+
+.package-card h4 {
+
+    color:#d4af37;
+
+    font-size:22px;
+
+    margin:15px;
+
+}
+
+
+
+.package-card a {
+
+    display:inline-block;
+
+    background:#d4af37;
+
+    color:white;
+
+    padding:12px 35px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    margin:15px 0 25px;
+
+    transition:0.3s;
+
+}
+
+
+
+.package-card a:hover {
+
+    background:#0b1f3a;
+
+}
+
+
+
+
+
+
+
+/* WHY CHOOSE US*/
+
+
+.why-us {
+
+    padding:70px 8%;
+
+    text-align:center;
+
+}
+
+
+
+.why-us p {
+
+    font-size:18px;
+
+    margin:15px;
+
+    color:#555;
+
+}
+
+
+
+
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+
+.packages-hero h1 {
+
+    font-size:38px;
+
+}
+
+
+
+.service-container,
+.package-container {
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+
+.service-card,
+.package-card {
+
+    width:90%;
+
+}
+
+
+}
+
+/* Make footer quick links horizontal */
+
+.footer-links a {
+
+    display:inline-block;
+
+    margin-right:10px;
+
+}
+
+/* Footer links color on all pages */
+
+footer .footer-links a {
+
+    color:light purple;
+
+    text-decoration:none;
+
+}
+
+
+footer .footer-links a:hover {
+
+    color:#d4af37;
+
+}
+
+/* Login and Sign Up hover effect */
+
+.nav-buttons a {
+
+    padding:10px 25px;
+
+    border-radius:25px;
+
+    transition:0.3s;
+
+}
+
+
+.nav-buttons a:hover {
+
+    background:#d4af37;
+
+    color:white;
+
+    transform:translateY(-3px);
+
+}
